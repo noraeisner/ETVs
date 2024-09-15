@@ -1,5 +1,7 @@
 # Eclipse Timing Variations (ETVs)
 
+Collaborator: Cole Johnston (Max Planck Institute, Garching) 
+
 Code to search for ETVs, which are deviations from a strictly linear ephemeris of the eclipsing binary, that can be used to detect or study additional gravitating bodies in a system. While the midpoint of eclipses of an isolated eclipsing binary are expected to occur at regular time intervals, perturbations from additional bodies, such as in a hierarchical triple system, can result in periodic variations in the times between consecutive eclipses.
 
 Teh first code (extraction) generates a model of the primary eclipse by fitting a trapezoid or coshgauss (the shapes found to best represent the eclipses) to the smoothed, phase folded, and subsequently binned TESS light curve. The best-fit model generated from the phase folded data is then fit to each individual primary transit where the only two free model parameters is the time of the eclipse and the slope of an underlying linear trend. The latter is to allow for systematic effects that change the slope of the eclipse. The same methodology is independently carried out for the secondary eclipses.
